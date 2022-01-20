@@ -7,11 +7,11 @@ class Consultation extends Control{
     use Validation;
     public function conReq(){
         $consult = array(
-            "nurse" => properFormat($_SESSION['nurse']),
-            "name" => properFormat($_SESSION['user']['name']),
-            "address" => properFormat($_SESSION['user']['address']),
-            "age" => properAge($_SESSION['user']['age']),
-            "gender" => validateGender(properFormat($_SESSION['user']['gender']))
+            "nurse" => $this->properFormat($_SESSION['nurse']),
+            "name" => $this->properFormat($_SESSION['user']['name']),
+            "address" => $this->properFormat($_SESSION['user']['address']),
+            "age" => $this->properAge($_SESSION['user']['age']),
+            "gender" => $this->validateGender($this->properFormat($_SESSION['user']['gender']))
         );
         $this->setConReq($consult);
     }

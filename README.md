@@ -13,6 +13,10 @@
     •	Ease of Storing/Retrieving Required Data
     •	Reduce Error (Less double checking of papers etc…)
 
+## Mock-up
+
+    https://www.figma.com/file/04ghh0k0CQY2XdsQijyghq/Clinic?node-id=0%3A1
+
 ## Languages
 
     PHP 
