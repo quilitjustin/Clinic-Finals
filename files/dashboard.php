@@ -28,7 +28,7 @@
                 <thead class="table-dark" style="position: sticky; top: 0; z-index: 1;">
                     <tr>
                         <th scope="col">Nurse</th>
-                        <th scope="col">Name</th>
+                        <th scope="col">Patient</th>
                         <th scope="col">Age</th>
                         <th scope="col">Gender</th>
                         <th scope="col">Address</th>

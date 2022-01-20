@@ -1,6 +1,9 @@
 <?php
 
 trait Validation{
+    //always redirect to index 
+    //if already logged in the index will redirect them to dashboard
+    //chances of happening is small unless the user do something mischief
     private function validateGender($gender){
         $gender = $this->properFormat($gender);
         if(!in_array($gender, ['Male', 'Female'])){
@@ -11,7 +14,7 @@ trait Validation{
     }
     private function isEmpty($data){
             if(empty($data)){
-            header("Location: ../index.php?msg=<h3 class='text-danger'>Missing Input!</h3>");
+            header("Location: ../index.php?msg=<h3 class='text-danger'>Wrong Input!</h3>");
             die();
         }
     }
